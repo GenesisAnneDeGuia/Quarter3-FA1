@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formative Assessment 1</title>
+</head>
+<body>
+    <button onclick="askUserInfo()">Enter Your Name & Birth Year</button>
+    <p id="userOutput"></p>
+    
+    <script>
+        function askUserInfo() {
+            let firstName = prompt("Enter your first name:");
+            let lastName = prompt("Enter your last name:");
+            let birthYear = parseInt(prompt("Enter your birth year:"));
+            let currentYear = new Date().getFullYear();
+            let age = currentYear - birthYear;
+
+            document.getElementById("userOutput").innerHTML = 
+                "Hello " + firstName + " " + lastName + "! How does it feel to be " + age + " years old?";
+        }
+    </script>
+</body>
+</html>

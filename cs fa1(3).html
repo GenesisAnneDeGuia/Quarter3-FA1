@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formative Assessment 1</title>
+</head>
+<body>
+    <button onclick="shareInfo()">Share My Info</button>
+    
+    <script>
+        function shareInfo() {
+            let consent = confirm("Do you agree to share your personal information?");
+            if (consent) {
+                console.log("User has agreed to share their information.");
+            } else {
+                console.log("User does not wish to share his/her information.");
+            }
+        }
+    </script>
+</body>
+</html>
